@@ -30,7 +30,7 @@ void I2C_init(void) {
     // setup freq peref
     I2C1->CR2 &= ~I2C_CR2_FREQ;
     I2C1->CR2 |= 42; // 42mhz (APB1)
-    // setup 100khz speed of bus I2C
+    // setup 400khz speed of bus I2C
     I2C1->CCR &= ~I2C_CCR_CCR;
     I2C1->CCR |= 35;
     // rise time
